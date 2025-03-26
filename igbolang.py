@@ -5,7 +5,7 @@ import sys
 import os
 import runpy
 import code
-from core import transpile
+from core.core import transpile
 
 
 def commandline():
