@@ -27,11 +27,8 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 """
 
-from igbolangplugin import IgboPlugin
-
-
 # Igbo keywords
-class IgboKeyword(IgboPlugin):
+class IgboKeyword():
     """
     python igbo keyword
     """
@@ -91,7 +88,7 @@ class IgboKeyword(IgboPlugin):
     }
 
 
-class igbo_buildin_method(IgboPlugin):
+class igbo_buildin_method():
     """
     python igbo methods
     """
@@ -196,7 +193,7 @@ class igbo_buildin_method(IgboPlugin):
     }
 
 
-class igbo_exception(IgboPlugin):
+class igbo_exception():
     """
     python igbo exceptions
     Built-in exception keyword
@@ -250,7 +247,7 @@ class igbo_exception(IgboPlugin):
     }
 
 
-class igbolang(IgboPlugin):
+class igbolang():
     """
     ibolang igbo keyword plugin
     """
@@ -279,7 +276,7 @@ class igbolang(IgboPlugin):
 
 
 # enter simplified Igbo dict here
-class igbo_sys(IgboPlugin):
+class igbo_sys():
     """
     ibpy sys module simplified Igbo plugin
     """
@@ -301,7 +298,7 @@ class igbo_sys(IgboPlugin):
                }
 
 
-class igbo_traceback(IgboPlugin):
+class igbo_traceback():
     """
     ibpy traceback simplified Igbo plugin
     """
