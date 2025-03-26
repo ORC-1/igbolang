@@ -1,57 +1,52 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-"""Igbo keyword dictionaries
-
-This is the MIT license:
-http://www.opensource.org/licenses/mit-license.php
-
-Copyright (c) 2019~ Roland|Chima and contributors.
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to
-deal in the Software without restriction, including without limitation the
-rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
-sell copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
-"""
+import sys
+import os
+import runpy
+import code
+from core import transpile
 
 
-# Universal keywords repository
-#: always run annotator before access worddict
-worddict = {}
-#: Traditional Igbo keywords repository
-igbodict = {}
+def commandline():
+    """IgboLang, the programming language in Igbo
 
-
-class IgboPlugin(object):
+    usages:
+        igbolang                      Enter REPL
+        igbolang <file.igbl>          Execute IgboLang script
+        igbolang <file.igbl> [args...] Execute IgboLang script with optional arguments
     """
-    basic plugin class
-    """
-    pass
+    if len(sys.argv) < 2:
+        # Start interactive REPL mode
+        sys.ps1 = "igbl>> "
+        banner = "IgboLang, the programming language in Igbo (Interactive Interpreter)"
+        code.interact(banner=banner, readfunc=transpile)
+
+    else:
+
+        file_path = sys.argv[1]
+
+        script_args = sys.argv[2:]  # Capture optional arguments
+
+        if not os.path.exists(file_path):
+            print(f"igbolang: file '{file_path}' does not exist")
+
+            sys.exit(1)
+
+        sys.path[0] = os.path.dirname(os.path.abspath(file_path))
+
+        with open(file_path) as igbolang:
+
+            python = transpile(src=igbolang)
+
+            code_object = compile(python, file_path, "exec")
+
+            # Set sys.argv to simulate script execution with arguments
+
+            sys.argv = [file_path] + script_args
+
+            runpy.run_module(code_object, mod_name="__main__")
 
 
-def revert_dict(lang_dict):
-    """make a reverse dictionary from the input dictionary
-
-    >>> revert_dict({'a':'1', 'b':'2'})
-    {'1': 'a', '2': 'b'}
-    """
-    rev_dict = {}
-    dict_keys = lang_dict.keys()
-    dict_keys.reverse()
-    #map(rev_dict.update, map(lambda i: {lang_dict[i]:i}, dict_keys))
-    for i in dict_keys:
-        rev_dict.update({lang_dict[i]:i})
-    return rev_dict
+if __name__ == "__main__":
+    commandline()

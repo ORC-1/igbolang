@@ -1,7 +1,8 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-"""Igbo keyword dictionaries
+"""
+Igbo keyword dictionaries
 
 This is the MIT license:
 http://www.opensource.org/licenses/mit-license.php
