@@ -1,98 +1,79 @@
-Introduction
---------------
+# IgboLang: Python in Igbo
 
-Igbo is an indigenous language popularly spoken in Nigeria, Ibolang is a full 
-extension of the Igbo language in Python. <br />
-With Igbolang, you can write and run python like programs in Igbo
+## Introduction
+IgboLang is a Python extension that allows you to write and run programs in Igbo, a language widely spoken in Nigeria. It preserves Python 3 syntax and methods, making it an excellent tool for learning programming in your native language.
 
-Igbolang acts like python 3 and plays like python 3, it maintains all the python syntax 
-and methods.
-user could use it to learn programming in their native language.
+## Example Usage
+IgboLang is easy to use. Below is a simple "Hello, World!" program:
 
-Example
-----------
-igbolang is highly user friendly, the following is a simple "HelloWorld" program
-       
-       deputa("Uwa Aloo")
+```bash
+python igbolang.py
+```
 
- <br />
- running this, will diplay
-         
-         Uwa Aloo 
+**Interactive Session:**
+```
+IgboLang, the programming language in Igbo (Interactive Interpreter)
+igbl>> deputa("Uwa Aloo")
+```
 
-to console, which translated to English is "Hello World"
+**Output:**
+```
+Uwa Aloo  # Equivalent to "Hello, World!"
+```
 
-you can code more complex code by installing igbolang to your PC or by using the igbolang online IDE(coming soon...).
+For more examples, visit:  
+[IgboLang Examples](https://github.com/ORC-1/igbolang/tree/master/examples)
 
-  * https://github.com/ORC-1/igbolang/tree/master/examples (example codes)
+To run an IgboLang script from the command line:
+```bash
+$ igbolang filename.igbl
+```
 
-<br />
-To run programs is as simple as:
+For a full list of available commands and translations, check the dictionary:  
+[IgboLang Dictionary](https://github.com/ORC-1/igbolang/blob/master/dictionary.txt)
 
-     $ igbolang filename.ibl
+## Installation
+To install IgboLang, use pip or easy_install:
+```bash
+$ pip install Igbolang
+```
+Or:
+```bash
+$ easy_install -U Igbolang
+```
 
-  from your preferred shell or command line  
+### Virtual Environment Installation
+For systems with multiple Python versions, it's recommended to use a virtual environment:
+```bash
+$ conda create -n Igbolang python==3.XX
+```
+Or using Virtualenv:
+```bash
+$ virtualenv igbolang
+```
 
-  you can go through to the dictionary on: 
-  * https://github.com/ORC-1/igbolang/blob/master/dictionary.txt
-      
-  to get an exhaustive list of all currently available commands and there English translation
+### Manual Installation
+Clone the repository and install manually:
+```bash
+git clone https://github.com/ORC-1/igbolang.git
+cd igbolang
+python setup.py install
+```
 
-Install
-----------
+## Setup for Beginners
+1. Download and install Python 3 from:  
+   [Python 3 Download](https://www.python.org/ftp/python/3.7.2/python-3.7.2.exe)
+2. Verify Python installation.
+3. Install IgboLang:
+   ```bash
+   $ pip install Igbolang
+   ```
+4. Clone the example repository and run scripts using:
+   ```bash
+   $ igbolang filename.igbl
+   ```
 
-If you'd like to play Igbolang with full features included, you should install Igbolang.
-
-You could use pip or easy_install command to install Igbolang:
-
-	$ pip install Igbolang 
-
-			or
-
-    $ easy_install -U Igbolang
-
-to use easy_install command, you should install distribute module for python 3 first:
-
-http://pypi.python.org/pypi/distribute/
-
-And check your system path params if it contains python3.x/bin path.
-
-ex: edit .bashrc to include "/Library/Frameworks/Python.framework/Versions/3.x/bin" in your PATH parameter.
-
-For sytem running multiple version of python, you are better of using a virtual enviroment
-with Igbolang:
-
-	$ conda create -n Igbolang python==3.XX
-
-			or using Virtualenv
-
-	$ virtualenv igbolang  
-
-Lastly you can clone the repo using this url https://github.com/ORC-1/igbolang.git : navigate to the folder path and run python setup.py 
-Copy the source files into your script folder, you should highly consider using 
-a virtual enviroment if you are using this option and the previous options are better 
-off
-
-For <h1>Absolute Beginners</h1>:
-
-
-      follow this link: 
-      https://www.python.org/ftp/python/3.7.2/python-3.7.2.exe
-      download python 3 install it and ensure it's working
-
-<h1>Then:</h1>
-          
-  You can use pip to install Igbolang:
-
-      $ pip install Igbolang 
-    
-  Go to the example here , clone the repository and run them with igbolang filename.ibl
-
-Change Log
--------------
-
-You could view the ChangeLog to see what's new in these version.
-
-  * https://github.com/ORC-1/igbolang/blob/master/CHANGELOG.txt
-
+## Change Log
+View the latest updates in the ChangeLog:  
+[IgboLang ChangeLog](https://github.com/ORC-1/igbolang/blob/master/CHANGELOG.txt)
 
