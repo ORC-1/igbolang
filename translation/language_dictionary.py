@@ -44,24 +44,24 @@ class IgboKeyword():
 
         # def
         "kowa": "def",
-        "klas": "class",
+        "udi ihe": "class",
         "onwe": "self",
         "uwa": "global",
 
         # import
         "site": "from",
-        "ibubata": "import",
+        "bubata": "import",
         "dika": "as",
 
         # flow
-        "ibia": "return",
+        "laghachi": "return",
         "gafere": "pass",
         "bulie": "raise",
-        "gaaba": "continue",
+        "gaa nihu": "continue",
 
         # control
         "oburu": "if",
-        "ozobu": "elif",
+        "oburu na": "elif",
         "ozo": "else",
 
         # for loop
@@ -71,11 +71,11 @@ class IgboKeyword():
 
         # while loop
         "mgbe": "while",
-        "ikwusi": "break",
+        "kwusi": "break",
 
         # try
-        "trai": "try",
-        "ewezuga": "except",
+        "nwa le": "try",
+        "wezuga": "except",
         "nikpaazu": "finally",  # n'ikpaazu
         "ikwuputa": "assert",
 
@@ -127,39 +127,39 @@ class igbo_buildin_method():
         "dekoodu": "decoding",  ##############
 
         # list methods
-        "tinye": "append",
-        "igbati": "extend",
-        "itinye": "insert",
-        "pop": "pop",  #########################
+        "gbakwunye": "append",
+        "gbatia": "extend",
+        "tinye": "insert",
+        "tufuo": "pop",  #########################
         "nkeozo": "next",
         "wepu": "remove",
-        "revarsi": "reverse",
+        "tugharia": "reverse",
         "guo": "count",
-        "ndeksi": "index",
-        "sot": "sort",
+        "onodu": "index",
+        "hazie": "sort",
 
         # dict methods
-        "kii": "keys",
+        "igodo": "keys",
         "uru": "values",
         "ihe": "items",
         "melite": "update",  #################
-        "kopi": "copy",
+        "dere": "copy",
 
         # set methods
         "anyado": "clear",  ################
-        "igbako": "add",
+        "gbako": "add",
         "tufuo": "discard",
-        "mjikota": "union",
+        "njiko": "union",
         "nrutu": "intersection",
         "odiiche": "difference",  # ọdịiche
         "symmetric_difference": "symmetric_difference",
 
         # file methods
         "meghe": "open",
-        "guoba": "read",  # gụọ comflict
+        "guba": "read",  # gụọ comflict
         "dee": "write",
-        "guoline": "readline",  ############
-        "guolines": "readlines",  ############
+        "guo ahiri": "readline",  ############
+        "guoo ahiri": "readlines",  ############
         "mechie": "close",
 
         # OO
@@ -168,27 +168,27 @@ class igbo_buildin_method():
         "inweattr": "getattr",
         "iheattr": "hasattr",
         "setiattr": "setattr",
-        "aku": "property",
+        "onwunwe": "property",
 
         # build in functions
         "lenz": "len",
-        "maz": "max",
-        "min": "min",
+        "kacha elu": "max",
+        "kacha ala": "min",
 
         # build in methods
-        "enumeratia": "enumerate",
-        "eval": "eval",
-        "iyo": "filter",
+        "kowaa": "enumerate",
+        "le ma kowa": "eval",
+        "yochaa": "filter",
         "maapu": "map",
-        "renji": "range",
+        "usoro onu ogugu": "range",
         "xrenji": "xrange",
-        "mgbako": "sum",
+        "chikota": "sum",
         "udi": "type",
         "ihe": "object",
-        "ziip": "zip",
-        "inyeaka": "help",
+        "kekota": "zip",
+        "nyeaka": "help",
         "obodo": "locals",
-        "uwas": "globals",
+        "uwaa": "globals",
         "usoroklass": "classmethod",  ####Unclear_translation
     }
 
@@ -240,7 +240,7 @@ class igbo_exception():
         "MmejoUnicode": "UnicodeError",
         "NdumoduUser": "UserWarning",
         "MmejoValue": "ValueError",
-        "Ndumodu": "Warning",
+        "ido aka na nti": "Warning",
         "MmejoWindows": "WindowsError",
         "MmejoZeroDivision": "ZeroDivisionError",
         "MmejoUnicodeDecode": "UnicodeDecodeError",
@@ -264,7 +264,7 @@ class igbolang():
         "!==": "!=",
         "obughi": "not",
         "bu": "is",
-        "obughi bu": "is not",
+        "obughi kwa": "is not",
 
         # private
         "doc": "doc",
