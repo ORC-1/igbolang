@@ -3,7 +3,7 @@
 import tokenize
 import io
 
-from translation.ig_tran import trans as translations
+from translation.language_dictionary import trans as translations
 
 
 def translate_code(readline):
