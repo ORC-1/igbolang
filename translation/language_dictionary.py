@@ -76,7 +76,7 @@ class IgboKeyword():
         # try
         "nwa le": "try",
         "wezuga": "except",
-        "nikpaazu": "finally",  # n'ikpaazu
+        "nikpaazu": "finally",
         "ikwuputa": "assert",
 
         # build in methods
@@ -84,7 +84,7 @@ class IgboKeyword():
         "lamuda": "lambda",
         "deputa": "print",
         "na": "with",
-        "meputa": "yield",  ################
+        "meputa": "yield",
     }
 
 
@@ -123,14 +123,14 @@ class igbo_buildin_method():
         "sonye": "join",
         "Kewaa": "split",
         "dochie": "replace",
-        "enkoodu": "encoding",  ##############
-        "dekoodu": "decoding",  ##############
+        "enkoodu": "encoding",
+        "dekoodu": "decoding",
 
         # list methods
         "gbakwunye": "append",
         "gbatia": "extend",
         "tinye": "insert",
-        "tufuo": "pop",  #########################
+        "tufuo": "pop",
         "nkeozo": "next",
         "wepu": "remove",
         "tugharia": "reverse",
@@ -142,13 +142,13 @@ class igbo_buildin_method():
         "igodo": "keys",
         "uru": "values",
         "ihe": "items",
-        "melite": "update",  #################
+        "melite": "update",
         "dere": "copy",
 
         # set methods
-        "anyado": "clear",  ################
+        "anyado": "clear",
         "gbako": "add",
-        "tufuo": "discard",
+        "tufuoya": "discard",
         "njiko": "union",
         "nrutu": "intersection",
         "odiiche": "difference",  # ọdịiche
@@ -158,8 +158,8 @@ class igbo_buildin_method():
         "meghe": "open",
         "guba": "read",  # gụọ comflict
         "dee": "write",
-        "guo ahiri": "readline",  ############
-        "guoo ahiri": "readlines",  ############
+        "guo ahiri": "readline",
+        "guoo ahiri": "readlines",
         "mechie": "close",
 
         # OO
@@ -184,7 +184,7 @@ class igbo_buildin_method():
         "xrenji": "xrange",
         "chikota": "sum",
         "udi": "type",
-        "ihe": "object",
+        "ihea": "object",
         "kekota": "zip",
         "nyeaka": "help",
         "obodo": "locals",
